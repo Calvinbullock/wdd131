@@ -7,12 +7,12 @@ body {
 }
 
 .boarder {
-    border: 2px solid black;
+    border: 1px solid black;
     width: 600px;
     padding-top: 20%;
     padding-bottom: 20%;
-    padding-right: 40%;
-    padding-left: 40%;
+    padding-right: 30%;
+    padding-left: 30%;
     margin: 2rem;
 }
 
@@ -51,6 +51,11 @@ hr {
 
 li {
     padding-bottom: 2%;
+}
+
+#flex-div {
+    display: flex;
+    justify-content: center;
 }
 
 img {
