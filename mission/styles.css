@@ -34,14 +34,6 @@ h2 {
     font-size: 1rem;
     letter-spacing: 0.25rem;
     text-transform: uppercase;
-}
-
-h2 {
-    text-align: center;
-    color: #006EB6;
-    font-size: 1rem;
-    letter-spacing: 0.5rem;
-    text-transform: uppercase;
     margin-bottom: 0;
 }
 
@@ -61,4 +53,20 @@ li {
 img {
     width: 150px;
     margin: auto;
+}
+
+/* ========================== *\
+*       DARK THEME      
+\* =========================== */
+.dark {
+    background: black;
+    color: white;
+}
+
+.dark .boarder {
+    border: solid white 1px;
+}
+
+.dark h2 {
+    color: #73beef;
 }
