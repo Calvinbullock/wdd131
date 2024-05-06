@@ -1,0 +1,66 @@
+body {
+    max-width: 1600px;
+    margin: auto;
+    width: 100%;
+}
+
+body h1, h2 {
+    text-align: center;
+}
+
+header {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+footer {
+    margin-bottom: 0;
+    margin-top: .5rem;
+}
+
+header, footer{
+    color: white;
+    background: purple;
+    padding: .5rem;
+}
+
+/* ========================== *\
+*             Nav
+\* ========================== */
+nav {
+    list-style: none;
+    margin-bottom: .5rem;
+    max-width: 99%;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+
+    color: white;
+    list-style: none;
+    padding: 0;
+
+    width: 100%;
+    margin: auto;
+}
+
+nav li {
+    float: left;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover {
+    background: white;
+    color: black;
+    padding: 20%;
+}
+
