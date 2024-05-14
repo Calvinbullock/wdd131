@@ -10,6 +10,51 @@
     --secondary-font: Mooli, san-serif;
 }
 
+/* ========================== *\
+*             img viewer
+\* ========================== */
+.imgViewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 99%;
+    background: rgba(0, 0, 0, 0.75);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    
+    padding: 1%;
+}
+
+.imgViewer img {
+    max-height: 98%;
+    max-width: 98%;
+    grid-row: 2;
+    align-self: center;
+}
+
+.closeViewer {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    grid-row: 1;
+    justify-self: end;
+    padding-right: 2%;
+    padding: 1%;
+}
+
+.closeViewer:hover {
+    color: lightgray;
+}
+
+/* ========================== *\
+*             General
+\* ========================== */
+
 body {
     font-family: var(--primary-font);
     font-size: 1.2em;
@@ -72,7 +117,7 @@ header, footer{
     align-items: center;
 }
 
-img {
+.img-box img {
     border: .5rem solid grey;
     box-shadow: .5rem .5rem 0 rgba(0, 0, 0, 0.3);
 
@@ -85,6 +130,11 @@ img {
 /* ========================== *\
 *             Nav
 \* ========================== */
+
+#menu-hide.hide {
+    display: none;
+}
+
 nav {
     list-style: none;
     margin-bottom: .5rem;
@@ -146,6 +196,14 @@ nav a:hover {
 *             Media
 \* ========================== */
 @media screen and (min-width: 720px) {
+
+
+    .imgViewer {
+        width: 80%;
+        height: 80%;
+        margin: auto;
+    }
+
     /* ========================== *\
     *             Nav
     \* ========================== */
@@ -168,6 +226,7 @@ nav a:hover {
 }
 
 @media screen and (min-width: 1000px) {
+
     .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
