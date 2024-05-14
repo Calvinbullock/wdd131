@@ -47,11 +47,9 @@ function createViewerTemplate(img, altText) {
  *  select and remove the imgViewer
 \* ===================================== */
 function closeViewer() {
-    const imgViewer = document.getElementsByClassName(".imgViewer");
+    const imgViewer = document.querySelector(".imgViewer");
 
     if (imgViewer) {
-        console.log("yeet")
-        console.log(imgViewer)
         imgViewer.remove();
     } else {
         console.warn("No image viewer found to close");
