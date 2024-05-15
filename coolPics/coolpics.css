@@ -11,7 +11,7 @@
 }
 
 /* ========================== *\
-*             img viewer
+*             imgViewer
 \* ========================== */
 .imgViewer {
     position: fixed;
@@ -183,7 +183,7 @@ nav a:hover {
     padding: 5px 10px; 
     color: var(--text-light);
     
-    /* Text styles */
+    /* Text/Font changes*/
     font-size: 1.1rem;
     text-align: center;
     font-weight: bold;
@@ -199,7 +199,7 @@ nav a:hover {
 
 
     .imgViewer {
-        width: 80%;
+        width: 80vh;
         height: 80%;
         margin: auto;
     }
