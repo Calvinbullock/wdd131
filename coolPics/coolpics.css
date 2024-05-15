@@ -195,8 +195,7 @@ nav a:hover {
 /* ========================== *\
 *             Media
 \* ========================== */
-@media screen and (min-width: 720px) {
-
+@media screen and (min-width: 740px) {
 
     .imgViewer {
         width: 80vh;
@@ -227,6 +226,10 @@ nav a:hover {
 
 @media screen and (min-width: 1000px) {
 
+    .imgViewer {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
     .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
