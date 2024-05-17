@@ -78,7 +78,8 @@ function viewHandler(event) {
     // get the src attribute from that element and 'split' it on the "-"
     const imgParts = clickedImage.src.split("-");
 
-    // construct the new image file name by adding "-full.jpeg" to the first part of the array from the previous step
+    // construct the new image file name by adding 
+    //      "-full.jpeg" to the first part of the array from the previous step
     let imgFull = imgParts[0] + "-full.jpeg";
 
     // insert the viewerTemplate into the top of the body element
@@ -89,7 +90,8 @@ function viewHandler(event) {
     const container = document.body;
     container.insertAdjacentHTML("afterbegin", viewerHTML);
 
-    // add a listener to the close button (X) that calls a function called closeViewer when clicked
+    // add a listener to the close button 
+    //      (X) that calls a function called closeViewer when clicked
     const closeX = document.querySelector(".closeViewer");
     closeX.addEventListener('click', closeViewer);
 }
