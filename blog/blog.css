@@ -1,0 +1,92 @@
+/* Define the color variables */
+:root {
+    --primary-color: black;
+    --secondary-color: #ffc107;
+    --text-color: white;
+}
+
+body {
+    color: var(--text-color);
+    background: var(--primary-color);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+/* ========================== *\
+*             Grid
+\* ========================== */
+
+main {
+    display: grid;
+    grid-template-columns: 0.3fr auto 0.3fr;
+    grid-gap: 10px;
+}
+
+#date-div, #filter-div {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.book-card {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* ========================== *\
+*             Nav
+\* ========================== */
+
+nav {
+    list-style: none;
+    margin-bottom: .5rem;
+    max-width: 99%;
+    margin: auto;
+
+    border: 2px solid var(--text-color);
+    border-right: none;
+    border-left: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+
+    color: var(--text-color);
+    list-style: none;
+    padding: 0;
+
+    width: 100%;
+    margin: auto;
+}
+
+nav li {
+    float: left;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:visited {
+    color: var(--text-color);
+}
+
+nav a:hover {
+    color: var(--primary-color);
+    background: var(--text-color);
+    padding: 20%;
+}
