@@ -21,13 +21,15 @@ header h1 {
 
 main {
     display: grid;
-    grid-template-columns: 0.3fr auto 0.3fr;
+    grid-template-columns: auto 0.5fr;
     grid-gap: 10px;
+    padding-top: 1rem;
 }
 
-#date-div, #filter-div {
-    border: 1px solid #ccc;
+#filter-div {
+    border: 1px solid var(--text-color);
     padding: 10px;
+    margin: 0.25rem;
 }
 
 #content {
@@ -35,10 +37,10 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.book-card {
-    border: 1px solid #ddd;
-    margin: 10px;
+#content-sec {
+    border: 1px solid var(--text-color);
     padding: 10px;
+    margin: 0.25rem;
 }
 
 /* ========================== *\
@@ -89,4 +91,54 @@ nav a:hover {
     color: var(--primary-color);
     background: var(--text-color);
     padding: 20%;
+}
+
+/* ========================== *\
+*           filter-div
+\* ========================== */
+
+#filter-div {
+    display: flex;
+    flex-direction: column;
+}
+.filter-catagory {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 1rem;
+}
+/* ========================== *\
+*         book-card
+\* ========================== */
+
+.book-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.book-card img {
+    width: auto;
+    height: 80%;
+    max-height: 65vh;
+    margin: auto;
+}
+
+.book-div {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin: 1rem;
+
+    border: 2px solid var(--text-color);
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+}
+
+.date-div {
+    text-align: right;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
