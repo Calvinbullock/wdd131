@@ -101,12 +101,24 @@ nav a:hover {
     display: flex;
     flex-direction: column;
 }
+
 .filter-catagory {
     display: flex;
     flex-direction: row;
-    padding: 0;
     margin: 1rem;
 }
+
+#filter-div p {
+    margin: auto;
+    padding: 0;
+}
+
+#filter-div select {
+    height: 2rem;
+    margin: auto;
+    width: 5rem;
+}
+
 /* ========================== *\
 *         book-card
 \* ========================== */
