@@ -155,6 +155,7 @@ nav a:hover {
 }
 
 .date-div {
+    width: 20%;
     text-align: right;
     padding: 2rem;
     margin: 3rem;
