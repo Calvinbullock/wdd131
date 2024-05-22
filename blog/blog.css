@@ -19,6 +19,19 @@ header h1 {
     font-size: 3.5rem;
 }
 
+a {
+    color: yellow;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: green;
+
+}
+
 /* ========================== *\
 *             Grid
 \* ========================== */
