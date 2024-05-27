@@ -152,6 +152,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     margin: auto;
+    width: 60%;
 }
 
 .date-div {
