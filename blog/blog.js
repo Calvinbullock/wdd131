@@ -39,32 +39,41 @@ const articles = [
     }
 ];
 
-function createBookcard(i) {
-    return`<div class="book-card">
-                    <div class="book-div">
-                        <h1>${articles[i].title}</h1>
-                        <img src="${articles[i].imgSrc}" alt="${articles[i].imgAlt}">
-                        <p>
-                            ${articles[i].description}
-                        </p>
-                        <a href="">Read More ...</a>
-                    </div>
-
-                    <div class="date-div">
-                        <p class="date-p">Date: ${articles[i].date}</p>
-                        <p>Age: ${articles[1].ages}</p>
-                        <p>Genre: ${articles[i].genre}</p>
-                        <p>${articles[i].stars}<p>
-                    </div>
-                </div>`;
+/* ======================================
+ * Create the HTML for each book article,
+ *      return that HTML
+ ===================================== */
+function createBookcard(article) {
+    console.log(article.title);
+    return `
+    <div class="book-card">
+        <div class="book-div">
+            <h1>${article.title}</h1>
+            <img src="${article.imgSrc}" alt="${article.imgAlt}">
+            <p>
+                ${article.description}
+            </p>
+            <a href="">Read More ...</a>
+        </div>
+        <div class="date-div">
+            <p class="date-p">Date: ${article.date}</p>
+            <p>Age: ${article.ages}</p>
+            <p>Genre: ${article.genre}</p>
+            <p>${article.stars}</p>
+        </div>
+    </div>
+    `;
 }
 
-function instertBookcard() {
+/* ======================================
+ *  Insert each articles HTML into 
+ *      the DOM
+ ===================================== */
+function insertBookcards() {
     const cardSection = document.getElementById("content-sec");
-
-    for (let i = 0; i <= articles.length; i++) {
-        cardSection.insertAdjacentHTML("afterbegin", createBookcard(i));
-    }
+    articles.forEach(article => 
+        cardSection.insertAdjacentHTML("afterbegin", createBookcard(article))
+    );
 }
 
-instertBookcard();
+insertBookcards();
