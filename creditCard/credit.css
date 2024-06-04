@@ -6,25 +6,28 @@
 }
 
 #front {
-    /*background-color: #ddd; */
-    /*padding: 1em;*/
-    /**/
+    margin: 1rem;
 
     display: grid;
     grid-template-columns: .5fr .5fr; 
 
-    width: 30%;
+    width: 400px;
+    height: 200px;
     background: gray;
+    border-radius: 1rem;
     padding: 2rem;
 }
 
-/*#back {*/
-/*    background-color: #ddd; */
-/*    position: absolute;*/
-/*    top: 100%; */
-/*    right: 1cm; */
-/*    padding: 1em;*/
-/*}*/
+#back {
+    display: grid;
+    grid-template-columns: .5fr .5fr; 
+
+    width: 400px;
+    height: 200px;
+    background: gray;
+    border-radius: 1rem;
+    padding: 2rem;
+}
 
 /* ***************************** *\
 *   Front Card
