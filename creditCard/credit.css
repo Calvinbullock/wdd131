@@ -84,3 +84,13 @@
 /* ***************************** *\
 *   Back Card
 \* ***************************** */
+
+#card-cvc {
+    grid-column: 3;
+    grid-row: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
