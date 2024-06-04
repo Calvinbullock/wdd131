@@ -30,7 +30,6 @@ body {
     height: 200px;
     background: gray;
     border-radius: 1rem;
-    padding: 2rem;
 }
 
 /* ***************************** *\
@@ -49,7 +48,6 @@ body {
     grid-column: 2;  
     grid-row: 3;
 }
-
 
 #card-num {
     grid-column: 1/4;
@@ -97,7 +95,7 @@ body {
 
 #bar-strip {
     grid-column: 1/4;
-    grid-row: 1;
+    grid-row: 2;
 
     background: silver;
 }
@@ -109,5 +107,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding-right: 2rem;
 }
 
