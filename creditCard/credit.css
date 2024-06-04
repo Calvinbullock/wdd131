@@ -7,26 +7,34 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas:
+        "overlap overlap"
+        "overlap overlap";
 }
 
 #front {
-    grid-column: 3;
+    /* card-front postions / overlap */
+    grid-area: overlap;
     z-index: 2;
 
     /* interiear grid */
     display: grid;
     grid-template-columns: .5fr .5fr; 
 
-    width: 400px;
-    height: 200px;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.4);
     background: gray;
     border-radius: 1rem;
+
+    width: 400px;
+    height: 200px;
     padding: 2rem;
     margin: 1rem;
 }
 
 #back {
-    grid-column: 3;
+    /* card-back postions / overlap */
+    grid-area: overlap;
     z-index: 1;
 
     /* interiear grid */
@@ -37,7 +45,11 @@ body {
     height: 250px;
     background: gray;
     border-radius: 1rem;
+    margin: 4rem;
+    margin-left: 9rem;
 }
+
+
 
 /* ***************************** *\
 *   Front Card
@@ -114,6 +126,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-right: 2rem;
+    padding-right: 1rem;
 }
 
