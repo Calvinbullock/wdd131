@@ -4,14 +4,16 @@ body {
 }
 
 .credit-card {
-    /*display: grid;*/
-    /*grid-template-columns: 1fr; */
-    /*position: relative; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 #front {
-    margin: 1rem;
+    grid-column: 3;
+    z-index: 2;
 
+    /* interiear grid */
     display: grid;
     grid-template-columns: .5fr .5fr; 
 
@@ -20,14 +22,19 @@ body {
     background: gray;
     border-radius: 1rem;
     padding: 2rem;
+    margin: 1rem;
 }
 
 #back {
+    grid-column: 3;
+    z-index: 1;
+
+    /* interiear grid */
     display: grid;
     grid-template-columns: .5fr .5fr; 
 
-    width: 400px;
-    height: 200px;
+    width: 450px;
+    height: 250px;
     background: gray;
     border-radius: 1rem;
 }
