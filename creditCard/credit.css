@@ -6,11 +6,12 @@ body {
 .credit-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 
     grid-template-areas:
         "overlap overlap"
-        "overlap overlap";
+        "overlap overlap"
+        "submit empty";
 }
 
 #front {
@@ -49,7 +50,18 @@ body {
     margin-left: 9rem;
 }
 
-
+#submit {
+    grid-area: submit;
+    text-align: right;
+    
+    padding: 0.5rem;
+    margin-left: 2rem;
+}
+#submit-button {
+    font-size: 1.5rem;
+    width: 35%;
+    height: 35%;
+}
 
 /* ***************************** *\
 *   Front Card
