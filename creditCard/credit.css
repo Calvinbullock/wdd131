@@ -1,4 +1,8 @@
 
+body {
+    font-size: 1.3rem;
+}
+
 .credit-card {
     /*display: grid;*/
     /*grid-template-columns: 1fr; */
@@ -75,7 +79,13 @@
     width: 40px;
 }
 
+#card-icon {
+    display: flex;
+    flex-direction: column;
+}
+
 #front img {
+    padding-left: 35px;
     grid-column: 2/2;
 }
 /* }-end */
@@ -84,6 +94,13 @@
 /* ***************************** *\
 *   Back Card
 \* ***************************** */
+
+#bar-strip {
+    grid-column: 1/4;
+    grid-row: 1;
+
+    background: silver;
+}
 
 #card-cvc {
     grid-column: 3;
