@@ -127,6 +127,11 @@ function successesTemplate(data) {
  * ============================================ */
 submitButton.addEventListener("click", function(event) {
     event.preventDefault();
+
+    // hide the form
+    const form = document.getElementById("formDiv");
+    form.style.display = "none"
+
     const data = getData()
 
     // Create a new participant section from the template
@@ -135,5 +140,7 @@ submitButton.addEventListener("click", function(event) {
 
     submitButton.parentNode.insertBefore(successesView, submitButton);
 })
+
+
 
 
