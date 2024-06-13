@@ -1,5 +1,5 @@
 
-import { participantTemplate, successesTemplate } from "./templates.js";
+import { participantTemplateEx, successesTemplateEx } from "./templates.js";
 
 /* ==============================================
  * ----------------------------------------------
@@ -22,7 +22,7 @@ addParticipantButton.addEventListener("click", function() {
 
     // Create a new participant section from the template
     const newParticipantSection = document.createElement("section");
-    newParticipantSection.innerHTML = participantTemplate(numberOfParticipants);
+    newParticipantSection.innerHTML = participantTemplateEx(numberOfParticipants);
 
     // Insert the new participant section into the fieldset
     addParticipantButton.parentNode.insertBefore(newParticipantSection, addParticipantButton);
@@ -82,7 +82,7 @@ submitButton.addEventListener("click", function(event) {
 
     // Create a new participant section from the template
     const successesView = document.createElement("div");
-    successesView.innerHTML = successesTemplate(data)
+    successesView.innerHTML = successesTemplateEx(data)
 
     submitButton.parentNode.insertBefore(successesView, submitButton);
 })

@@ -56,5 +56,6 @@ function successesTemplate(data) {
         `
 }
 
-module.exports = participantTemplate, successesTemplate;
+export const participantTemplateEx = participantTemplate;
+export const successesTemplateEx = successesTemplate;
 
