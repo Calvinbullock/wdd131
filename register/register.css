@@ -160,3 +160,9 @@ button:hover {
     }
 }
 
+#successesDiv {
+    border: 3px solid #006622;
+    margin: 2rem;
+}
+
+
