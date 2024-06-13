@@ -55,3 +55,6 @@ function successesTemplate(data) {
         </div>
         `
 }
+
+module.exports = participantTemplate, successesTemplate;
+
