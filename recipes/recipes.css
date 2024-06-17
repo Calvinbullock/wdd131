@@ -1,16 +1,145 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
+
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer{
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
 #page-logo {
     width: 50px;
     height: 50px;
 }
+
+
+/* ===================================== 
+*   header
+* =================================== */
+header {
+    width: 88%;
+    margin: auto;
+}
+
+#title-link {
+    color: black;
+    text-decoration: none;
+    font-family: "Playwrite PL", cursive;
+}
+
+#search {
+    position: relative;
+    width: 90%;
+    margin:auto;
+}
+
+#searchBar {
+    height: 22px;
+    width: 100%;
+    margin:auto;
+    margin-right: 0;
+}
+
+#searchButton {
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+    right: 10px;
+    height: 20px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#searchImg {
+    width: 18px;
+    height: 22px;
+    margin:auto;
+    margin-left: 0;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ===================================== 
+*   recipe-card
+* =================================== */
+
+.recipe-card {
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+    border: black solid 1px;
+}
+
+.recipe-img-div {
+    width: 90%;
+    margin: auto;
+}
+
+.recipe-img {
+    width: 100%;
+}
+
+.recipe-name {
+    font-family: "Playwrite PL", cursive;
+}
+
+.desc {
+    display: none;
+}
+
+.tag {
+    display: inline-block;
+    padding: 2px 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+
+/* ===================================== 
+*   Footer
+* =================================== */
 
 #icons-src {
     font-size:  0.6em;
 }
 
 .social-icon {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
+
+@media screen and (min-width: 500px) {
+    /* ===================================== 
+    *   recipe-card
+    * =================================== */
+    .recipe-card {
+        display: flex;
+    }
+
+    .recipe-details {
+        margin-left: 1rem;
+    }
+
+    .recipe-tags p {
+        margin-top: 0;
+    }
+        
+    .desc {
+        display: block;
+    }
+}
 
