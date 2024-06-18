@@ -3,14 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Calvin Bullock" content="Recipe Site">
+        <meta name="Calvin Bullock" content="My Recipe Site">
         <link rel="icon" href="./img/card-icon.png" type="image/x-icon">
         <title>Recipe Site</title>
 
+        <link rel="icon" type="image/x-icon" href="./../card-icon.png">  
         <link rel="stylesheet" href="recipes.css">
         <script src="main.js" defer></script>
 
-        <!-- TODO  Favicon link -- Social Media Meta: NEW  -->
+        <meta property="og:title" content="My Recipe Site">
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Read, share and rank amazing recipes.">
+        <meta property="og:image" content="./image/chocolate-chip-cookies.jpg">
+        <meta property="og:url" content="https://calvinbullock.github.io/wdd131/recipes/index.html">
+        <meta name="twitter:card" content="summary_large_image">
     </head>
 
     <body>
@@ -30,11 +36,10 @@
                         type="text" 
                         id="searchBar"
                         name="search" 
-                        value="" 
                         placeholder="Find a Recpie"
                     >
                     <button id="searchButton" type="button">
-                        <img id="searchImg" src="images/search.svg" alt="">
+                        <img id="searchImg" src="images/search.svg" alt="searchButton">
                     </button>
                 </form>
             </div>
