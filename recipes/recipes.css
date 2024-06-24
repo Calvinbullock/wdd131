@@ -78,12 +78,13 @@ hr {
 }
 
 .recipe-img-div {
-    width: 90%;
+    width: 50%;
     margin: auto;
 }
 
 .recipe-img {
     width: 100%;
+
 }
 
 .recipe-name {
@@ -135,6 +136,7 @@ footer{
 
     .recipe-details {
         margin-left: 1rem;
+        max-width: 60%;
     }
 
     .recipe-tags p {
@@ -145,6 +147,18 @@ footer{
         display: block;
     }
 
+    .recipe-img-div {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .recipe-img {
+        max-width: 100%; 
+        height: auto;
+    }
 
     /* ===================================== 
     *   Footer
