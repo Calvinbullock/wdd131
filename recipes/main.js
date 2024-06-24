@@ -7,7 +7,7 @@ function tagsTemplate(tags) {
     // loop through the tags list and transform the strings to HTML
     let tagsHTML = ``
     for (let i = 0; i < tags.length; i++) {
-        tagsHTML += `<li>${tags[i]}</li>`
+        tagsHTML += `<li class="tag">${tags[i]}</li>`
     }
 
 	return tagsHTML;
@@ -74,36 +74,33 @@ function getRandRecipe() {
 }
 
 /* ==========================================================
- * 
+ * Render function
  ========================================================= */
 function renderRecipes(recipeList) {
-	// get the element we will output the recipes into
-    const recipeDiv = document.getElementById("recipe-div");
+    // get the element we will output the recipes into
+    const outputElement = document.getElementById("recipe-div");
+    let recipeHtml = "";
 
 	// use the recipeTemplate function to transform our recipe objects into recipe HTML strings
-    let recipesHTML = ``
-    for (let i = 0; i < recipeList.length; i++) {
-        recipesHTML += recipeTemplate(i)
-    }
-    
-	// Set the HTML strings as the innerHTML of our output element.
-    const successesView = document.createElement("div");
-    successesView.innerHTML = successesTemplateEx(recipesHTML)
+    for (const recipe of recipeList) {
+        const recipeString = recipeTemplate(recipe);
 
-    recipeDiv.parentNode.insertBefore(recipesHTML, recipeDiv);
+        // Append the recipe HTML string to the accumulator
+        recipeHtml += recipeString;
+    }
+
+	// Set the HTML strings as the innerHTML of our output element.
+    outputElement.innerHTML = recipeHtml;
 }
 
 /* ==========================================================
- * 
+ * init function
  ========================================================= */
 function init() {
-  // get a random recipe
-  const recipe = getRandRecipe(recipes)
-  // render the recipe with renderRecipes.
-  renderRecipes([recipe]);
+    // get a random recipe
+    const recipe = getRandRecipe(recipes)
+    // render the recipe with renderRecipes.
+    renderRecipes(recipes);
 }
 init();
-
-//let recipeHTML = randRecipe()
-//console.log(recipeHTML)
 
