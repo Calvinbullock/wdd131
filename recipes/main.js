@@ -70,7 +70,7 @@ function recipeTemplate(recipe) {
  ========================================================= */
 function getRandRecipe() {
     let randInt = Math.floor(Math.random()* recipes.length)
-    return recipeTemplate(recipes[randInt])
+    return (recipes[randInt])
 }
 
 /* ==========================================================
@@ -90,7 +90,7 @@ function renderRecipes(recipeList) {
     }
 
 	// Set the HTML strings as the innerHTML of our output element.
-    outputElement.innerHTML = recipeHtml;
+    outputElement.innerHTML = recipeHtml
 }
 
 /* ==========================================================
@@ -98,13 +98,12 @@ function renderRecipes(recipeList) {
  ========================================================= */
 function init() {
     // get a random recipe
-    //const recipe = getRandRecipe(recipes)
+    const recipe = getRandRecipe(recipes)
 
     // render the recipe with renderRecipes.
-    // BUG  passing in rand-recipe not work
-    //renderRecipes(recipes);
+    renderRecipes([recipe])
 }
-init();
+init()
 
 /* ==========================================================
  * search / filter func
