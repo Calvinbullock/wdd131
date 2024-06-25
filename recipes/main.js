@@ -113,24 +113,41 @@ function searchRecipes() {
     let searchValue = searchBar.value.toLowerCase()
 
     const filteredRecipes = recipes.filter(function(recipe) {
-        let name = recipe.name.toLowerCase()
-        return name.includes(searchValue);
+        let name = recipe.name.toLowerCase();
+        let tags = recipe.tags.map(tag => tag.toLowerCase());
+
+        // Check if searchValue is included in either name or any of the tags (case-insensitive)
+        return name.includes(searchValue) || tags.some(tag => tag.includes(searchValue));
     });
 
-    renderRecipes(filteredRecipes)
+    const sorted = filteredRecipes.sort(function(a, b) {
+        const nameA = a.name.toLowerCase()
+        const nameB = b.name.toLowerCase()
+        if (nameA < nameB) {
+            return -1
+        }
+        if (nameA > nameB) {
+            return 1
+        }
+        return 0
+    })
+
+    renderRecipes(sorted)
 }
 
 /* ==========================================================
  * search elements 
  ========================================================= */
-const searchBar = document.getElementById("searchBar");
+const searchBar = document.getElementById("searchBar")
 const searchButton = document.getElementById("searchButton")
-searchButton.addEventListener("click", searchRecipes);
+searchButton.addEventListener("click", searchRecipes)
 
 // Event listener for Enter key press on search bar
 searchBar.addEventListener("keydown", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault(); // Prevent default form submission
-    searchRecipes();
-  }
+    if (event.key === "Enter") {
+        event.preventDefault() // Prevent default form submission
+        searchRecipes()
+    }
 });
+
+
