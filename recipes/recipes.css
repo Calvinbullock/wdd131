@@ -37,6 +37,7 @@ header {
     width: 100%;
     margin:auto;
     margin-right: 0;
+    z-index: -1;
 }
 
 #searchButton {
@@ -52,6 +53,7 @@ header {
     border: none;
     padding: 0;
     cursor: pointer;
+    z-index: 1;
 }
 
 #searchImg {

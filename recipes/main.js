@@ -78,15 +78,15 @@ function getRandRecipe() {
  ========================================================= */
 function renderRecipes(recipeList) {
     // get the element we will output the recipes into
-    const outputElement = document.getElementById("recipe-div");
-    let recipeHtml = "";
+    const outputElement = document.getElementById("recipe-div")
+    let recipeHtml = ""
 
 	// use the recipeTemplate function to transform our recipe objects into recipe HTML strings
     for (const recipe of recipeList) {
-        const recipeString = recipeTemplate(recipe);
+        const recipeString = recipeTemplate(recipe)
 
         // Append the recipe HTML string to the accumulator
-        recipeHtml += recipeString;
+        recipeHtml += recipeString
     }
 
 	// Set the HTML strings as the innerHTML of our output element.
@@ -98,9 +98,39 @@ function renderRecipes(recipeList) {
  ========================================================= */
 function init() {
     // get a random recipe
-    const recipe = getRandRecipe(recipes)
+    //const recipe = getRandRecipe(recipes)
+
     // render the recipe with renderRecipes.
-    renderRecipes(recipes);
+    // BUG  passing in rand-recipe not work
+    //renderRecipes(recipes);
 }
 init();
 
+/* ==========================================================
+ * search / filter func
+ ========================================================= */
+function searchRecipes() {
+    let searchValue = searchBar.value.toLowerCase()
+
+    const filteredRecipes = recipes.filter(function(recipe) {
+        let name = recipe.name.toLowerCase()
+        return name.includes(searchValue);
+    });
+
+    renderRecipes(filteredRecipes)
+}
+
+/* ==========================================================
+ * search elements 
+ ========================================================= */
+const searchBar = document.getElementById("searchBar");
+const searchButton = document.getElementById("searchButton")
+searchButton.addEventListener("click", searchRecipes);
+
+// Event listener for Enter key press on search bar
+searchBar.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault(); // Prevent default form submission
+    searchRecipes();
+  }
+});
