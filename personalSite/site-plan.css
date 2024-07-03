@@ -3,7 +3,6 @@ Any spaces in your font name should be replaced with a +.
 Fonts are separated by a | */
 @import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
 
-
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
@@ -30,6 +29,10 @@ Fonts are separated by a | */
   --nav-background-color: var(--accent2-color);
   --nav-hover-link-color: var(--accent2-color);
   --nav-hover-background-color: var(--primary-color);
+}
+
+a {
+    color: #a6e3a1;
 }
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
