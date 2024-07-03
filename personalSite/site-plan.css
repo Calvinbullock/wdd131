@@ -9,10 +9,10 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #cad2c5;
-  --secondary-color: #52796f;
-  --accent1-color: #354f52;
-  --accent2-color: #2f3e46;
+  --primary-color: #f5c2e7;
+  --secondary-color: #f2cdcd;
+  --accent1-color: #f5e0dc;
+  --accent2-color: #1e1e2e;
 
   /* change the values below to your chosen font(s) */
   --heading-font: playfair;
@@ -20,13 +20,15 @@ Fonts are separated by a | */
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: var( --primary-color ); /* headlines on a white background */
-  --headline-color-on-color: white; /* headlines on a colored background */
+  --headline-color-on-color: var(--accent2-color); /* headlines on a colored background */
+
   --paragraph-color-on-white: var( --primary-color ); /* paragraph text on a white background */
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-color-on-color: var(--accent2-color); /* paragraph text on a colored background */
   --paragraph-background-color: var(--primary-color);
+
   --nav-link-color: var(--primary-color);
-  --nav-background-color: var(--secondary-color);
-  --nav-hover-link-color: white;
+  --nav-background-color: var(--accent2-color);
+  --nav-hover-link-color: var(--accent2-color);
   --nav-hover-background-color: var(--primary-color);
 }
 
@@ -37,6 +39,8 @@ body {
   margin: 0 auto;
   padding: 4em;
   font-size: 18px;
+    color: #cdd6f4;
+    background: #1e1e2e	;
 }
 img {
   display: block;
@@ -90,13 +94,16 @@ p {
 }
 
 .primary {
+    color: var(--accent2-color);
   background-color: var(--primary-color);
 }
 .secondary {
+    color: var(--accent2-color);
   background-color: var(--secondary-color);
 }
 .accent1 {
-  background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    background-color: var(--accent1-color);
 }
 .accent2 {
   background-color: var(--accent2-color);
