@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+  --primary-color: #f5c2e7;
+  --secondary-color: #f2cdcd;
+  --accent1-color: #f5e0dc;
+  --background: #1e1e2e;
+
+  --heading-font: playfair;
+  --paragraph-font: Changa, Helvetica, sans-serif;
+
+  --headline-color-on-white: var( --primary-color );
+  --headline-color-on-color: var(--accent2-color);
+
+  --paragraph-color-on-white: var( --primary-color );
+  --paragraph-color-on-color: var(--accent2-color);
+  --paragraph-background-color: var(--primary-color);
+
+  --nav-link-color: var(--primary-color);
+  --nav-background-color: var(--accent2-color);
+  --nav-hover-link-color: var(--accent2-color);
+  --nav-hover-background-color: var(--primary-color);
+}
+
+body {
+    background: var(--background);
+}
+
+/* ============================================== *\
+||                  Nav
+\* ============================================== */
+
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav {
+  list-style-type: none;
+  display: flex;
+}
+nav a {
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
