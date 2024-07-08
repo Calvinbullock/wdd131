@@ -43,6 +43,12 @@ h1 {
     font-size: 4rem;
 }
 
+.social-logo {
+    width: 50px;
+    height: 50px;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
 
 #hero-div {
     margin: 0 auto;
@@ -58,7 +64,7 @@ h1 {
 }
 
 #about-me {
-    margin-top: 10%; /*  TODO this needs a fix*/
+    margin-top: 15%; /*  TODO  this needs a fix*/
     padding-right: 2rem;
     width: 40%;
 }
