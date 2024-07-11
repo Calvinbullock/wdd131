@@ -19,15 +19,15 @@ function tagsTemplate(tags) {
  ========================================================= */
 function projectTemplate(item) {
     return  `
-        <div class="project-card">
+        <div class="item-card">
             <div class="item-img-div">
-                <img class="item-img" src="${item.image}" alt="${item.description}">
+                <img class="item-img" src="${item.heroImage}" alt="${item.altText}">
             </div>
                 <div class="item-details">
                 <div class="item-tags">
                     ${tagsTemplate(item.tags)}
                 </div>
-                    <h2 class="item-name">${item.name}</h2>
+                    <h2 class="item-name">${item.title}</h2>
                     <p class="desc">
                         ${item.description}
                     </p>
@@ -61,7 +61,7 @@ function renderProjects(projectList) {
  ========================================================= */
 function init() {
     // render the projects
-    renderProjects([projects])
+    renderProjects(projects)
 }
 init()
 

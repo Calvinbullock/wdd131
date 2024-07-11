@@ -1,0 +1,76 @@
+
+@import url("./main.css");
+
+/* ===================================== 
+*  Gallery Item 
+* =================================== */
+
+.item-card {
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+    border: black solid 1px;
+}
+
+.item-img-div {
+    width: 50%;
+    margin: auto;
+}
+
+.item-img {
+    width: 100%;
+}
+
+.desc {
+    display: none;
+}
+
+.tag {
+    /*TODO  in progress*/
+    /*color: var();*/
+    /*background: var(--primary-color);*/
+
+    display: inline-block;
+    padding: 2px 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+/* ===================================== 
+*   media
+* =================================== */
+@media screen and (min-width: 700px) {
+    /* ===================================== 
+    *   recipe-card
+    * =================================== */
+    .item-card {
+        display: flex;
+    }
+
+    .item-details {
+        margin-left: 1rem;
+        max-width: 60%;
+    }
+
+    .item-tags p {
+        margin-top: 0;
+    }
+        
+    .desc {
+        display: block;
+    }
+
+    .item-img-div {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .item-img {
+        max-width: 100%; 
+        height: auto;
+    }
+}
+
