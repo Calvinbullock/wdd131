@@ -1,4 +1,4 @@
-import recipes from './recipes.mjs';
+import projects from './projects.mjs';
 
 /* ==========================================================
  * Create and return a tags template
@@ -13,52 +13,23 @@ function tagsTemplate(tags) {
 	return tagsHTML;
 }
 
-/* ==========================================================
- * Create and return a rating template
- ========================================================= */
-function ratingTemplate(rating) {
-	// begin building an html string using the ratings HTML written earlier as a model.
-	let html = `<span
-	class="rating"
-	role="img"
-	aria-label="Rating: ${rating} out of 5 stars"
-    >`
-
-    for (let i = 1; i < 6; i++) {
-        html += `\n`
-        if (i >= rating) {
-            html += `<span aria-hidden="true" class="icon-star-empty">☆</span>`
-        } else {
-            html += `<span aria-hidden="true" class="icon-star">⭐</span>`
-        }
-    }
-	html += `\n</span>`
-
-	return html
-}
 
 /* ==========================================================
- * Create a template
+ * Gallery Item Create a Template
  ========================================================= */
-function recipeTemplate(recipe) {
+function projectTemplate(item) {
     return  `
-        <div class="recipe-card">
-            <div class="recipe-img-div">
-                <img class="recipe-img" src="${recipe.image}" alt="${recipes.description}">
+        <div class="project-card">
+            <div class="item-img-div">
+                <img class="item-img" src="${item.image}" alt="${item.description}">
             </div>
-                <div class="recipe-details">
-                <div class="recipe-tags">
-                    ${tagsTemplate(recipe.tags)}
+                <div class="item-details">
+                <div class="item-tags">
+                    ${tagsTemplate(item.tags)}
                 </div>
-                    <h2 class="recipe-name">${recipe.name}</h2>
-                    <span
-                        class="rating"
-                        role="img"
-                        aria-label="Rating: 4 out of 5 stars"
-                    >
-                    ${ratingTemplate(recipe.rating)}
+                    <h2 class="item-name">${item.name}</h2>
                     <p class="desc">
-                        ${recipe.description}
+                        ${item.description}
                     </p>
                 </span>
             </div>
@@ -66,44 +37,43 @@ function recipeTemplate(recipe) {
 }
 
 /* ==========================================================
- * Get and return and random recipe number
- ========================================================= */
-function getRandRecipe() {
-    let randInt = Math.floor(Math.random()* recipes.length)
-    return (recipes[randInt])
-}
-
-/* ==========================================================
  * Render function
  ========================================================= */
-function renderRecipes(recipeList) {
-    // get the element we will output the recipes into
-    const outputElement = document.getElementById("recipe-div")
-    let recipeHtml = ""
+function renderProjects(projectList) {
+    // get the element we will output the project details into
+    const outputElement = document.getElementById("gallery-div")
+    let galleryHTML = ""
 
-	// use the recipeTemplate function to transform our recipe objects into recipe HTML strings
-    for (const recipe of recipeList) {
-        const recipeString = recipeTemplate(recipe)
+	// use the projectTemplate function to transform our project objects into HTML strings
+    for (const item of projectList) {
+        const itemTemplate = projectTemplate(item)
 
-        // Append the recipe HTML string to the accumulator
-        recipeHtml += recipeString
+        // Append the item HTML string to the accumulator
+        galleryHTML += itemTemplate
     }
 
 	// Set the HTML strings as the innerHTML of our output element.
-    outputElement.innerHTML = recipeHtml
+    outputElement.innerHTML = galleryHTML 
 }
 
 /* ==========================================================
  * init function
  ========================================================= */
 function init() {
-    // get a random recipe
-    const recipe = getRandRecipe(recipes)
-
-    // render the recipe with renderRecipes.
-    renderRecipes([recipe])
+    // render the projects
+    renderProjects([projects])
 }
 init()
+
+
+
+
+// TODO  change this to work with the new json objects
+// TODO  change this to work with the new json objects
+// TODO  change this to work with the new json objects
+// TODO  change this to work with the new json objects
+// TODO  change this to work with the new json objects
+// TODO  change this to work with the new json objects
 
 /* ==========================================================
  * search / filter func
