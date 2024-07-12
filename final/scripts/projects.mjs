@@ -1,5 +1,6 @@
 const projects = [
     {
+        id: 0,
         title: 'C++ Chess',
         gitUrl: 'https://github.com/Calvinbullock/Chess',
         startDate: 'May 18, 2022',
@@ -12,6 +13,7 @@ const projects = [
         tags: ['c++', 'games', 'oop', 'terminal'],
     },
     {
+        id: 1,
         title: 'NewLife Game',
         gitUrl: 'https://github.com/Calvinbullock/new-life',
         startDate: 'Sep 2, 2023',

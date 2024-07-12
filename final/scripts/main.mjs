@@ -21,7 +21,7 @@ function projectTemplate(item) {
     return  `
         <div class="item-card">
             <div class="item-img-div">
-                <img class="item-img" src="${item.heroImage}" alt="${item.altText}">
+                <a href="./projectItem.html?id=${item.id}"><img class="item-img" src="${item.heroImage}" alt="${item.altText}"></a>
             </div>
                 <div class="item-details">
                 <div class="item-tags">
