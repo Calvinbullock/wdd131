@@ -8,12 +8,22 @@
 }
 
 #hero-img {
+    margin-top: 1rem;
     width: 35%;
-    border-radius: 100px;
+    max-height: 50%;
+    border-radius: 40px;
 }
 
 #about-me {
     width: 40%;
     padding-right: 2rem;
     align-items: center;
+}
+
+.social-logo {
+    width:  40px;
+    height: 40px;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-top: 1rem;
 }

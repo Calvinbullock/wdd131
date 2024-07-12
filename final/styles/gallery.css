@@ -31,7 +31,6 @@
 
 .desc {
     display: none;
-    min-height: 50px;
 }
 
 .tag {
@@ -42,6 +41,7 @@
     display: inline-block;
     padding: 2px 5px;
     margin-right: .5rem;
+    margin-bottom: .5rem;
     border: 1px solid;
     border-radius: 3px;
 }
@@ -49,12 +49,13 @@
 /* ===================================== 
 *   media
 * =================================== */
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 800px) {
     /* ===================================== 
     *   recipe-card
     * =================================== */
     .item-card {
         display: flex;
+        height: 260px;
     }
 
     .item-details {
