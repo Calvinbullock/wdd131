@@ -5,8 +5,16 @@
 *  Gallery Item 
 * =================================== */
 
+#gallery-div {
+    /* grid things*/
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
 .item-card {
     width: 80%;
+    min-height: 80%;
     padding: 1rem;
     margin: auto;
     border: solid 1px;
@@ -23,10 +31,11 @@
 
 .desc {
     display: none;
+    min-height: 50px;
 }
 
 .tag {
-    /*TODO  in progress*/
+    /* TODO  in progress*/
     /*color: var();*/
     /*background: var(--primary-color);*/
 
@@ -40,7 +49,7 @@
 /* ===================================== 
 *   media
 * =================================== */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
     /* ===================================== 
     *   recipe-card
     * =================================== */
@@ -72,6 +81,10 @@
     .item-img {
         max-width: 100%; 
         height: auto;
+    }
+
+    #gallery-div {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
