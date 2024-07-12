@@ -34,8 +34,10 @@ function projectTemplate(item) {
                     ${tagsTemplate(item.tags)}
                 </div>
                     <h2 class="item-name">${item.title}</h2>
+                    <p class="desc">Start Date: ${item.startDate} - Last update: ${item.lastUpdate}</p>
                     <p class="desc">${item.desc}</p>
                 </span>
+                <a href="./projectItem.html?id=${item.id}">See Details</a>
             </div>
         </div>`
 }
