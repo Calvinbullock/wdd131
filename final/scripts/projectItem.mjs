@@ -18,10 +18,16 @@ console.log(projectID);
 function projectTemplate(projectObject) {
     return ""
         + ` <h1>${projectObject.title}</h1>`
+        + `\n <h2>Start Date: ${projectObject.startDate} - Last update: ${projectObject.lastUpdate}</h2>`
         + `\n <img id="hero-img" src="${projectObject.heroImage}" alt="${projectObject.altText}">`
-        + `\n <p>${projectObject.desc}</p>`
+        + `\n <div class="desc">`
+        + `\n   <h2>Details:</h2>`
+        + `\n   <p>${projectObject.longDesc}</p>`
+        + `\n </div>`
         + `\n <br>`
         + `\n <a href="${projectObject.youtubeUrl}">Youtube Demo</a>`
+        + `\n <span> | </span>`
+        + `\n <a href="${projectObject.gitUrl}">Link to GitHub Repo:</a>`
 }
 
 /* ==========================================================

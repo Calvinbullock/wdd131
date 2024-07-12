@@ -8,11 +8,12 @@ const projects = [
         datePublished: null,
 
         desc: 'This is one of my first programs, I made it back in  May 18, 2022',
+        longDesc: '',
         heroImage: './images/Chess-Game-Play.png',
         altText: "Game running",
         youtubeUrl: null,
         otherImages: [null],
-        tags: ['c++', 'games', 'oop', 'terminal'],
+        tags: ['c++', 'games', 'oop', 'terminal', 'PersinalProject'],
     },
     {
         id: 1,
@@ -23,11 +24,14 @@ const projects = [
 
         datePublished: null,
         desc: 'This is a adventure tile game. It is built using c++ and the SFML library.',
+
+        longDesc: '\tI got the idea from the object orietaed class I took in my 4th semester. My final was building a simple turnbased game. I took this idea and originally planned to exspand on it. But as I started I decided to make it a whole new thing. This game is what came from that.<br><br>\tI am still working on this project when I can find time between classwork.',
+
         heroImage: './images/New-Life-Game-Play.png',
         altText: "Game running",
         youtubeUrl: 'https://www.youtube.com/watch?v=TKum7AfY2Do',
         otherImages: [null],
-        tags: ['c++', 'games', 'oop', 'gui'],
+        tags: ['c++', 'games', 'oop', 'gui', 'PersinalProject'],
     },
 ]
 
