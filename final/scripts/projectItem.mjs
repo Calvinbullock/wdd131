@@ -18,7 +18,7 @@ console.log(projectID);
 function projectTemplate(projectObject) {
     return ""
         + ` <h1>${projectObject.title}</h1>`
-        + `\n <img id="hero-img" src="${projectTemplate.heroImage}" alt="${projectTemplate.altText}">`
+        + `\n <img id="hero-img" src="${projectObject.heroImage}" alt="${projectObject.altText}">`
         + `\n <p>${projectObject.desc}</p>`
         + `\n <br>`
         + `\n <a href="${projectObject.youtubeUrl}">Youtube Demo</a>`
