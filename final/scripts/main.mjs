@@ -1,3 +1,4 @@
+
 import projects from './projects.mjs';
 
 /* ======================================================= *\
@@ -34,7 +35,7 @@ function projectTemplate(item) {
                 </div>
                     <h2 class="item-name">${item.title}</h2>
                     <p class="desc">
-                        ${item.description}
+                        ${item.desc}
                     </p>
                 </span>
             </div>
