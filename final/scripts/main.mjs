@@ -24,19 +24,17 @@ function tagsTemplate(tags) {
  * Gallery Item Create a Template
  ========================================================= */
 function projectTemplate(item) {
-    return  `
+    return `
         <div class="item-card">
             <div class="item-img-div">
                 <a href="./projectItem.html?id=${item.id}"><img class="item-img" src="${item.heroImage}" alt="${item.altText}"></a>
             </div>
-                <div class="item-details">
+            <div class="item-details">
                 <div class="item-tags">
                     ${tagsTemplate(item.tags)}
                 </div>
                     <h2 class="item-name">${item.title}</h2>
-                    <p class="desc">
-                        ${item.desc}
-                    </p>
+                    <p class="desc">${item.desc}</p>
                 </span>
             </div>
         </div>`
