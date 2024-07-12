@@ -38,11 +38,6 @@ main {
     max-width: 1800px;
 }
 
-h1 {
-    margin-top: .5rem;
-    font-size: 4rem;
-}
-
 .social-logo {
     width: 50px;
     height: 50px;
@@ -50,23 +45,8 @@ h1 {
     margin-right: .5rem;
 }
 
-#hero-div {
-    margin: 0 auto;
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h1 {
+    margin-top: .5rem;
+    font-size: 4rem;
 }
-
-#hero-img {
-    width: 35%;
-    border-radius: 100px;
-}
-
-#about-me {
-    margin-top: 15%; /*  TODO  this needs a fix*/
-    padding-right: 2rem;
-    width: 40%;
-}
-
 

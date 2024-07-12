@@ -1,0 +1,19 @@
+
+#hero-div {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-img {
+    width: 35%;
+    border-radius: 100px;
+}
+
+#about-me {
+    margin-top: 15%; /*  TODO  this needs a fix*/
+    padding-right: 2rem;
+    width: 40%;
+}
