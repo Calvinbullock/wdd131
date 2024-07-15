@@ -9,12 +9,14 @@
     /* grid things*/
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-template-row: auto;
+    row-gap: 10px;
     gap: 10px;
 }
 
 .item-card {
     width: 80%;
-    min-height: 80%;
+    height: 90%;
     padding: 1rem;
     margin: auto;
     border: solid 1px;
@@ -45,7 +47,7 @@
 /* ===================================== 
 *   media
 * =================================== */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
     /* ===================================== 
     *   recipe-card
     * =================================== */
