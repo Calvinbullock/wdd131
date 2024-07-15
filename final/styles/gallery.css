@@ -55,7 +55,6 @@
     * =================================== */
     .item-card {
         display: flex;
-        height: 260px;
     }
 
     .item-details {
