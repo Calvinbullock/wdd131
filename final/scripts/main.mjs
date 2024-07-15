@@ -43,7 +43,9 @@ function projectTemplate(item) {
             </div>
             <div class="item-details">
                 <div class="item-tags">
+                <ul>
                     ${tagsTemplate(item.tags)}
+                </ul>
                 </div>
                     <h2 class="item-name">${item.title}</h2>
                     <p class="desc">Start Date: ${item.startDate} - Last update: ${item.lastUpdate}</p>
