@@ -32,6 +32,53 @@ nav a:hover {
   background-color: var(--nav-hover-background-color);
 }
 
+/* ============================================== *\
+||                  Gallery Search - Nav
+\* ============================================== */
+
+#search {
+    position: relative;
+    width: 30%;
+}
+
+#searchBar {
+    height: 30px;
+    width: 100%;
+    margin: auto;
+    margin-top: 38px;
+    margin-right: 0;
+    z-index: -1;
+    color: var(--nav-link-color);
+    background: var(--nav-background-color);
+    border-color: var(--nav-link-color);
+}
+
+#searchBar::placeholder {
+    color: var(--nav-link-color);
+}
+
+#searchButton {
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+    right: 10px;
+    height: 20px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#searchImg {
+    width: 18px;
+    height: 22px;
+    margin:auto;
+    margin-left: 0;
+}
 
 /* ============================================== *\
 ||                  footer
