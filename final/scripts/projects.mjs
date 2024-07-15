@@ -6,7 +6,7 @@ const projects = [
         startDate: "May 18, 2022",
         lastUpdate: "Aug 20, 2022",
         desc: "This is one of my first programs, I made it back in  May 18, 2022",
-        longDesc: "",
+        longDesc: "This was one of my earliest programs I heard that the university I wanted to go to uses c++ so I wanted to learn it and get ahead. It ended up being one of the best and most usefull projects I ever did. I learned so much and have used what I learned here in all my programing since.",
         heroImage: "./images/Chess-Game-Play.png",
         altText: "Game running",
         youtubeUrl: null,
