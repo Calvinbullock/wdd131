@@ -1,4 +1,17 @@
 
+/* ======================================================= *\
+-------------------------------------------------------------
+|| __Gallery JS__
+|| 
+|| This file builds the gallery page based off the data stored 
+||      in projects.mjs.
+|| 
+|| This file also handles search and filtering of the project
+||      data when displaying in the gallery page.
+-------------------------------------------------------------
+\* ======================================================= */
+
+
 import projects from './projects.mjs';
 
 /* ======================================================= *\

@@ -1,4 +1,14 @@
 
+/* ======================================================= *\
+-------------------------------------------------------------
+|| __Project Item JS__
+|| 
+|| This file builds the page projectItem page based off 
+||      the data stored in projects.mjs and the id 
+||      passed in the url.
+-------------------------------------------------------------
+\* ======================================================= */
+
 import projects from './projects.mjs';
 
 // get parm from url
