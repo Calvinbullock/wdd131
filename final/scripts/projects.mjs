@@ -28,12 +28,3 @@ const projects = [
 ]
 
 export default projects 
-
-
-// TODO  
-/*
- * Move header / footer to template funcs
- * build search functions
- * add more project data
- * swap <leader>p and <leader>P in vim
- * */
