@@ -123,8 +123,6 @@ function searchItems() {
  * search elements 
  ========================================================= */
 const searchBar = document.getElementById("searchBar")
-const searchButton = document.getElementById("searchButton")
-searchButton.addEventListener("click", searchItems)
 
 // Event listener for Enter key press on search bar
 searchBar.addEventListener("keydown", function(event) {
