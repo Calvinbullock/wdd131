@@ -26,8 +26,8 @@ console.log(projectID);
  * Build page template
  ========================================================= */
 function projectTemplate(projectObject) {
-    return ""
-        + ` <h1>${projectObject.title}</h1>`
+    let html = ""
+        html += ` <h1>${projectObject.title}</h1>`
         + `\n <h2>Start Date: ${projectObject.startDate} - Last update: ${projectObject.lastUpdate}</h2>`
         + `\n <img id="hero-img" src="${projectObject.heroImage}" alt="${projectObject.altText}">`
         + `\n <div class="desc">`
@@ -35,9 +35,14 @@ function projectTemplate(projectObject) {
         + `\n   <p>${projectObject.longDesc}</p>`
         + `\n </div>`
         + `\n <br>`
-        + `\n <a href="${projectObject.youtubeUrl}">Youtube Demo</a>`
-        + `\n <span> | </span>`
-        + `\n <a href="${projectObject.gitUrl}">Link to GitHub Repo:</a>`
+
+    if (projectObject.youtubeUrl != null) {
+        html += `\n <a href="${projectObject.youtubeUrl}">Youtube Demo</a>`
+            + `\n <span> | </span>`
+    }
+    html += `\n <a href="${projectObject.gitUrl}">Link to GitHub Repo:</a>`
+
+    return html
 }
 
 /* ==========================================================

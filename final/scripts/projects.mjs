@@ -48,7 +48,7 @@ const projects = [
         longDesc: "This takes the basic apache file table display and adds a dark mode, and search functionality.",
         heroImage: "",
         altText: "",
-        youtubeUrl: "",
+        youtubeUrl: null,
         tags: ["website", "python", "PersinalProject", "cgi-library", "apache"],
     },
 ]
