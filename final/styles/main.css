@@ -37,6 +37,7 @@ main {
     text-align: center;
     margin: auto;
     max-width: 1800px;
+    min-height: 70vh;
 }
 
 h1 {
