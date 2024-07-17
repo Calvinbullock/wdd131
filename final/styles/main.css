@@ -33,6 +33,14 @@ body {
     font-size: 1.5rem;
 }
 
+h {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
 main {
     text-align: center;
     margin: auto;
