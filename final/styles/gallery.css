@@ -1,6 +1,4 @@
 
-@import url("./main.css");
-
 /* ===================================== 
 *  Gallery Item 
 * =================================== */
@@ -9,7 +7,6 @@
     /* grid things*/
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-row: auto;
     row-gap: 10px;
     gap: 10px;
 }
@@ -17,7 +14,7 @@
 .item-card {
     width: 80%;
     height: 90%;
-    padding: 1rem;
+    padding: 1.5rem;
     margin: auto;
     border: solid 1px;
 }
