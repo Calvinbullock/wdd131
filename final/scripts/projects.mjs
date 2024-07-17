@@ -45,7 +45,7 @@ const projects = [
         startDate: "eb 4, 2024",
         lastUpdate: "Oct 12, 2022",
         desc: "This is a frontend I built for my dads apache webserver that we use to serve files. It uses the apache cgi library.",
-        longDesc: "This takes the basic Apache file table display and adds a dark mode, and search functionality. It is a quick and simple build but it adds the functionality that I felt my dads home server was lacking. And most of my siblings have moved over to this rather then the default version as both are still accessible. Even my dad has been quite happy with it. But he also has mentioned that it needs to have more dynamic \"sort by\" options. So I need to add that.",
+        longDesc: "This takes the basic Apache file table display and adds a dark mode, and search functionality. It is a quick and simple build but it adds the functionality that I felt my dads home server was lacking. And most of my siblings have moved over to this rather then the default version as both are still accessible. Even my dad has been quite happy with it. But he also has mentioned that it needs to have more dynamic \"sort by\" options. So I need to add that.<br><br>Sadly I don't have any pictures or video as the server is at my dads.",
         heroImage: "",
         altText: "",
         youtubeUrl: null,
